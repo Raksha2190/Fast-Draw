@@ -24,7 +24,7 @@ function preload() {
 }
 
 function setup() {
-  canvas = createCanvas(280, 280);
+  canvas = createCanvas(350, 350);
   canvas.center();
   background("white");
   canvas.mouseReleased(classifyCanvas);
@@ -41,10 +41,10 @@ function draw() {
     line(pmouseX, pmouseY, mouseX, mouseY);
   }
 
-  check_sketch();
+  check_sketch()
   if(drawn_sketch == sketch)
   {
-    answer_holder = "set";
+    answer_holder = "set"
     score++;
     document.getElementById('score').innerHTML = 'Score: ' + score;
   }
